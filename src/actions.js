@@ -3,7 +3,8 @@
 {
     type: 'ADD_MEMBER',
     name: 'crusher',
-    rank: 'chief medical officer'
+    rank: 'chief medical officer',
+    id: 1234
 }
 
 */

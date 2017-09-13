@@ -1,6 +1,17 @@
-const crewMembers = (state, action) => {
+import actions from './actions';
 
-    return state;
+
+const crewMembers = (state, action) => {
+    switch (action.type) {
+        case actions.ADD_MEMBER:
+            return state.concat({
+                name: action.name,
+                rank: action.rank,
+                id: action.id
+            });
+        default:
+            return state;
+    }
 }
 
 
