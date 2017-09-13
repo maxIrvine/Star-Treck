@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 
 import Spaceship from './Spaceship';
+import CrewMember from './CrewMember';
+import BadAlien from './BadAlien';
 
 class App extends Component {
   render() {
@@ -12,9 +14,11 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React</h2>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Spaceship name="Discovery">
+          <CrewMember name="Spock" rank="Commander" />
+          <CrewMember name="Wesley" rank="Ensign" />
+          <BadAlien name="Borg" species="Borg" />
+        </Spaceship>
       </div>
     );
   }
